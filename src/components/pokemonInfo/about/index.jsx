@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { firstLetterToUpperCase } from "../../../handlers/firstLetterToUpperCase";
 
 export default function About({ pokemon }) {
-  console.log("teste ", pokemon);
   return (
     <Container>
       <SubContainer>
@@ -10,7 +9,7 @@ export default function About({ pokemon }) {
         <div>Height {pokemon.height} m</div>
         <div>
           {pokemon.abilities.map((item, key) => (
-            <p>{firstLetterToUpperCase(item.ability.name)}</p>
+            <p key={key}>{firstLetterToUpperCase(item.ability.name)}</p>
           ))}{" "}
           Moves
         </div>

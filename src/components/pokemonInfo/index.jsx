@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import styled, { ThemeProvider } from "styled-components";
-import { usePokemonStorage } from "../../context/PokemonsStorage";
+import { usePokemonStorage } from "../../context/";
 import { firstLetterToUpperCase } from "../../handlers/firstLetterToUpperCase";
 import { themeSelector } from "../../handlers/themesSelector";
 import { TransparentButton } from "../../styled-components/button";

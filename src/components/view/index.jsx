@@ -1,8 +1,7 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-import { usePokemonStorage } from "../../context/PokemonsStorage";
-import { usePokemonURLs } from "../../context/PokemonsURLS";
+import { usePokemonStorage, usePokemonURLs } from "../../context/";
 import { orderByNameOrId } from "../../handlers/orderByNameOrId";
 import Card from "../card";
 

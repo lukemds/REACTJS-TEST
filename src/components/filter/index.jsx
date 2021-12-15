@@ -1,7 +1,6 @@
 import axios from "axios";
 import styled from "styled-components";
-import { usePokemonStorage } from "../../context/PokemonsStorage";
-import { usePokemonURLs } from "../../context/PokemonsURLS";
+import { usePokemonStorage, usePokemonURLs } from "../../context/";
 import { Pokeball, ArrowDown } from "../../svgs";
 export default function Filter() {
   const {
@@ -73,10 +72,10 @@ export default function Filter() {
 }
 
 const Button = styled.div`
-  outline:none;
-  border:none;
-  cursor:pointer;
-`
+  outline: none;
+  border: none;
+  cursor: pointer;
+`;
 
 const LogoContainer = styled.div`
   display: flex;
