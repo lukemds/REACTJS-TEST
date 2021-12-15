@@ -2,9 +2,7 @@ import axios from "axios";
 import styled from "styled-components";
 import { usePokemonStorage } from "../../context/PokemonsStorage";
 import { usePokemonURLs } from "../../context/PokemonsURLS";
-import { ReactComponent as Pokeball } from "../../svgs/pokeball.svg";
-import { ReactComponent as ArrowDown } from "../../svgs/arrowdown.svg";
-
+import { Pokeball, ArrowDown } from "../../svgs";
 export default function Filter() {
   const {
     pokemonsStorage,

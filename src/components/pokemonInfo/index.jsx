@@ -6,7 +6,7 @@ import { usePokemonStorage } from "../../context/PokemonsStorage";
 import { firstLetterToUpperCase } from "../../handlers/firstLetterToUpperCase";
 import { themeSelector } from "../../handlers/themesSelector";
 import { TransparentButton } from "../../styled-components/button";
-import { ReactComponent as PokeballBackground } from "../../svgs/pokeball_background.svg";
+import { PokeballBackground } from "../../svgs/";
 import About from "./about";
 
 export default function PokemonInfo() {
