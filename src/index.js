@@ -4,10 +4,15 @@ import './index.css'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { BrowserRouter } from 'react-router-dom'
+import {PokemonsStorageProvider, PokemonsURLsProvider} from './context'
 
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <PokemonsStorageProvider>
+      <PokemonsURLsProvider>
+        <App />
+      </PokemonsURLsProvider>
+    </PokemonsStorageProvider>
   </BrowserRouter>,
   document.getElementById('root'),
 )
